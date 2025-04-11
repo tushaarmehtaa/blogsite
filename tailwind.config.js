@@ -5,6 +5,10 @@ module.exports = {
   darkMode: "class",
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    fontFamily: {
+      sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      mono: ['Montserrat', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+    },
     extend: {},
   },
   plugins: [

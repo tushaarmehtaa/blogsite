@@ -1,32 +1,35 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-import { themeEffect } from "./theme-effect";
+import { Montserrat } from "next/font/google";
 import { Analytics } from "./analytics";
 import { Header } from "./header";
 import { Footer } from "./footer";
-import { doge } from "./doge";
+import { ThemeScript } from "./theme-script";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ 
+  subsets: ["latin"],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
+});
 
 export const metadata = {
-  title: "Guillermo Rauch's blog",
+  title: "Tushaar Mehta's Blog",
   description:
-    "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "Tushaar Mehta is a 23-year-old entrepreneur, founder of Intuition Labs, AI enthusiast, and community builder.",
   openGraph: {
-    title: "Guillermo Rauchg's blog",
+    title: "Tushaar Mehta's Blog",
     description:
-      "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
-    url: "https://rauchg.com",
-    siteName: "Guillermo Rauchg's blog",
+      "Tushaar Mehta is a 23-year-old entrepreneur, founder of Intuition Labs, AI enthusiast, and community builder.",
+    url: "https://tushaarmehta.com",
+    siteName: "Tushaar Mehta's Blog",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rauchg",
-    creator: "@rauchg",
+    site: "@tushaarmehta_",
+    creator: "@tushaarmehta_",
   },
-  metadataBase: new URL("https://rauchg.com"),
+  metadataBase: new URL("https://tushaarmehta.com"),
 };
 
 export const viewport = {
@@ -41,17 +44,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.className} antialiased`}
+      className={`${montserrat.className} antialiased`}
       suppressHydrationWarning={true}
+      style={{fontFamily: montserrat.style.fontFamily}}
     >
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(${themeEffect.toString()})();(${doge.toString()})();`,
-          }}
-        />
+        <ThemeScript />
       </head>
-
       <body className="dark:text-gray-100 max-w-2xl m-auto">
         <main className="p-6 pt-3 md:pt-6 min-h-screen">
           <Header />

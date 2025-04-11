@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState, useCallback } from "react";
-import { themeEffect } from "./theme-effect";
 import va from "@vercel/analytics";
 
 export function ThemeToggle() {
@@ -13,14 +12,15 @@ export function ThemeToggle() {
   const [isHoveringOverride, setIsHoveringOverride] = useState(false);
 
   const onMediaChange = useCallback(() => {
-    const current = themeEffect();
-    setCurrentTheme(current);
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setCurrentTheme(isDarkMode ? "dark" : "light");
   }, []);
 
   useEffect(() => {
     setPreference(localStorage.getItem("theme"));
-    const current = themeEffect();
-    setCurrentTheme(current);
+    const isDarkMode = localStorage.getItem('theme') === 'dark' || 
+      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    setCurrentTheme(isDarkMode ? "dark" : "light");
 
     const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
     matchMedia.addEventListener("change", onMediaChange);
@@ -37,7 +37,16 @@ export function ThemeToggle() {
   // when the preference changes, whether from this tab or another,
   // we want to recompute the current theme
   useEffect(() => {
-    setCurrentTheme(themeEffect());
+    const isDarkMode = preference === 'dark' || 
+      (preference === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    setCurrentTheme(isDarkMode ? "dark" : "light");
+    
+    // Apply theme to document
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
   }, [preference]);
 
   useEffect(() => {

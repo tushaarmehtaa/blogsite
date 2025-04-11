@@ -11,6 +11,15 @@
     /* note: must keep in sync with `theme-color` in `theme-effect.ts` */
     @apply bg-[#fcfcfc];
   }
+  
+  /* Ensure consistent font family across all elements */
+  body, h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select, li {
+    font-family: "Inter", sans-serif;
+  }
+  
+  code, pre, kbd, samp {
+    font-family: "Roboto Mono", monospace;
+  }
 
   :root.dark {
     color-scheme: dark;

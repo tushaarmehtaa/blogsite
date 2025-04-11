@@ -1,74 +1,104 @@
 {
   "posts": [
     {
-      "id": "making-the-web-faster",
-      "date": "June 23, 2021",
-      "title": "Making the Web. Faster."
+      "id": "make-laziness-enablers",
+      "date": "June 23, 2024",
+      "title": "Make Laziness Enablers"
     },
     {
-      "id": "next-for-vercel",
-      "date": "December 16, 2020",
-      "title": "Next for Vercel"
+      "id": "dont-be-a-careerist",
+      "date": "June 15, 2024",
+      "title": "Don't be a careerist"
     },
     {
-      "id": "books-people-reread",
-      "date": "August 2, 2020",
-      "title": "Books people re-read"
+      "id": "your-day-job-is-useless",
+      "date": "June 09, 2024",
+      "title": "Your Day Job is Useless"
     },
     {
-      "id": "develop-preview-test",
-      "date": "June 11, 2020",
-      "title": "Develop, Preview, Test"
+      "id": "the-end-of-boring-work",
+      "date": "June 07, 2024",
+      "title": "The End of Boring Work"
     },
     {
-      "id": "static-hoisting",
-      "date": "May 2, 2020",
-      "title": "Static Hoisting"
+      "id": "ill-never-do-that-again",
+      "date": "June 05, 2024",
+      "title": "I'll never do that again."
     },
     {
-      "id": "an-ode-to-code-golf",
-      "date": "April 26, 2020",
-      "title": "An ode to code golf"
+      "id": "having-your-own-timeline",
+      "date": "June 03, 2024",
+      "title": "Having Your Own Timeline"
     },
     {
-      "id": "vercel",
-      "date": "April 21, 2020",
-      "title": "Vercel"
+      "id": "people-on-twitter",
+      "date": "June 02, 2024",
+      "title": "People on Twitter"
     },
     {
-      "id": "2019-in-review",
-      "date": "January 2, 2020",
-      "title": "2019 in Review"
+      "id": "self-awareness",
+      "date": "June 01, 2024",
+      "title": "Self-awareness"
     },
     {
-      "id": "its-hard-to-forego-efficiency",
-      "date": "March 28, 2017",
-      "title": "It's Hard to Forego Efficiency"
+      "id": "knowing-what-not-to-do",
+      "date": "May 31, 2024",
+      "title": "Knowing What Not to Do"
     },
     {
-      "id": "2016-in-review",
-      "date": "January 6, 2017",
-      "title": "2016 in Review"
+      "id": "thinking-about-learning",
+      "date": "May 30, 2024",
+      "title": "Thinking about learning"
     },
     {
-      "id": "addressable-errors",
-      "date": "February 4, 2016",
-      "title": "Addressable Errors"
+      "id": "never-outsource-thinking",
+      "date": "May 29, 2024",
+      "title": "Never Outsource Thinking"
     },
     {
-      "id": "pure-ui",
-      "date": "July 13, 2015",
-      "title": "Pure UI"
+      "id": "learnings-whats-really-important",
+      "date": "May 25, 2024",
+      "title": "Learnings what's really important"
     },
     {
-      "id": "ecmascript-6",
-      "date": "February 22, 2015",
-      "title": "ECMAScript 6"
+      "id": "why-youre-always-sleepy",
+      "date": "May 24, 2024",
+      "title": "Why You're Always Sleepy"
     },
     {
-      "id": "7-principles-of-rich-web-applications",
-      "date": "November 4, 2014",
-      "title": "7 Principles of Rich Web Applications"
+      "id": "specialization-is-overrated",
+      "date": "May 23, 2024",
+      "title": "Specialization is overrated"
+    },
+    {
+      "id": "youre-not-bad-youre-just-new",
+      "date": "May 22, 2024",
+      "title": "You're Not Bad, You're Just New"
+    },
+    {
+      "id": "optimizing-for-randomness",
+      "date": "May 16, 2024",
+      "title": "Optimizing for randomness"
+    },
+    {
+      "id": "a-writers-job",
+      "date": "May 12, 2024",
+      "title": "A writer's job"
+    },
+    {
+      "id": "your-job-is-not-the-problem",
+      "date": "May 11, 2024",
+      "title": "Your job is not the problem"
+    },
+    {
+      "id": "on-jealousy",
+      "date": "May 03, 2024",
+      "title": "On Jealousy"
+    },
+    {
+      "id": "you-are-your-work",
+      "date": "April 22, 2024",
+      "title": "You are your work (sort of)"
     }
   ]
 }

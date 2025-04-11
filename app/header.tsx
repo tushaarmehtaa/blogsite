@@ -1,3 +1,5 @@
+"use client";
+
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
 import Link from "next/link";
@@ -16,13 +18,18 @@ export function Header() {
         >
           About
         </Link>
+        <Link
+          href="/projects"
+          className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+        >
+          Past Work
+        </Link>
         <a
-          href="https://twitter.com/rauchg"
+          href="https://twitter.com/tushaarmehta_"
           target="_blank"
           className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] items-center p-2 rounded-sm transition-[background-color] whitespace-nowrap -mr-2"
         >
-          <TweetIcon style={{ marginRight: 4 }} /> Follow{" "}
-          <span className="hidden md:inline">&nbsp;me</span>
+          <TweetIcon style={{ marginRight: 4 }} /> Connect
         </a>
       </nav>
     </header>
