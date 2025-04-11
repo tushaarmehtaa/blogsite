@@ -1,56 +1,197 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: 'Projects | Tushaar Mehta',
-  description: 'A showcase of my work and projects',
+  title: 'Past Work | Tushaar Mehta',
+  description: 'A showcase of my content and event marketing projects',
   openGraph: {
-    title: 'Projects | Tushaar Mehta',
-    description: 'A showcase of my work and projects',
+    title: 'Past Work | Tushaar Mehta',
+    description: 'A showcase of my content and event marketing projects',
     images: [{ url: '/opengraph-image' }]
   }
 }
 
-# Projects
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 border-b pb-2">Content Marketing</h2>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+    {/* Tile 1 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Builders Central</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Grew IG audience from 3k to 150k+ followers writing short form script.</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Scriptwriting</span>
+        <span className="text-xs inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Creative Direction</span>
+      </div>
+    </div>
+    
+    {/* Tile 2 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Builders Central</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Grew YT audience from 5k to 70k+ subscribers writing long form scripts/tutorials.</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Scriptwriting</span>
+        <span className="text-xs inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Creative Direction</span>
+      </div>
+    </div>
+    
+    {/* Tile 3 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Ayush Wadhwa</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Grew IG from 25k to 200k+ followers using podcast clips and infotainment reels as channel manager.</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Channel Management</span>
+        <span className="text-xs inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded-full">Pre/Post Production</span>
+      </div>
+    </div>
+    
+    {/* Tile 4 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Karthik Sridharan</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Doubled LinkedIn following (45k → 90k)</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded-full">LinkedIn Strategy</span>
+        <span className="text-xs inline-block bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded-full">Meme Content</span>
+      </div>
+    </div>
+    
+    {/* Tile 5 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Sai</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Scripted technical videos with 1M+ views</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Scriptwriting</span>
+        <span className="text-xs inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Creative Direction</span>
+      </div>
+    </div>
+    
+    {/* Tile 6 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Aroleap</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Science-backed fitness content strategy</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 px-2 py-1 rounded-full">Health Tech</span>
+        <span className="text-xs inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Scriptwriting</span>
+        <span className="text-xs inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Creative Direction</span>
+      </div>
+    </div>
+    
+    {/* Tile 7 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+      <h3 className="font-bold mb-2">Terminal by Flexiple</h3>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Used AI to ideate, write, edit and produce videos.</p>
+      <div className="flex flex-wrap gap-1 mt-2">
+        <span className="text-xs inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Scriptwriting</span>
+        <span className="text-xs inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Creative Direction</span>
+        <span className="text-xs inline-block bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 px-2 py-1 rounded-full">AI</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-Here's a selection of my work and projects that showcase my interests and capabilities.
+<div className="mb-12">
+  <h2 className="text-2xl font-bold mb-6 border-b pb-2">Event Marketing</h2>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {/* Tile 1 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/frames-hackathon.jpg"
+        alt="Frames Hackathon at Antler"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">Frames Hackathon</h3>
+        <p className="text-white/90 text-sm mb-1">at Antler</p>
+      </div>
+    </div>
+    
+    {/* Tile 2 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/base-meetup.jpg"
+        alt="Base Meetup at Zo House"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">Base Meetup</h3>
+        <p className="text-white/90 text-sm mb-1">at Zo House</p>
+      </div>
+    </div>
+    
+    {/* Tile 3 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/farcaster-friday.jpg"
+        alt="Farcaster Friday at Hashed Haus"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">Farcaster Friday</h3>
+        <p className="text-white/90 text-sm mb-1">at Hashed Haus</p>
+      </div>
+    </div>
+    
+    {/* Tile 4 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/base-buildathon.jpg"
+        alt="Base Buildathon at Devfolio"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">Base Buildathon</h3>
+        <p className="text-white/90 text-sm mb-1">at Devfolio</p>
+      </div>
+    </div>
+    
+    {/* Tile 5 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/base-events.jpg"
+        alt="20+ Base Events During IBW and ETHIndia"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">20+ Base Events</h3>
+        <p className="text-white/90 text-sm mb-1">During IBW and ETHIndia</p>
+      </div>
+    </div>
+    
+    {/* Tile 6 */}
+    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden group relative">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-0"></div>
+      <Image
+        src="/images/events/base-ai-hackathon.jpg"
+        alt="Base AI Hackathon at Antler Residency"
+        width={400}
+        height={300}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <h3 className="font-bold text-white text-xl mb-1">Base AI Hackathon</h3>
+        <p className="text-white/90 text-sm mb-1">at Antler Residency</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-## Intuition Labs
-**Founder and Lead Strategist**
-
-Intuition Labs is my agency specializing in scriptwriting, content strategy, and founder branding. We work with global clients to create compelling narratives and content strategies that engage audiences and drive results.
-
-Services include:
-- AI-powered scriptwriting for videos and presentations
-- Content strategy for startups and established businesses
-- Personal branding for founders and executives
-- Community building and engagement strategies
-
-## AI Projects
-
-### Personalized Fitness Agent
-An AI-powered fitness assistant that creates personalized workout plans based on individual goals, equipment availability, and fitness level. The agent adapts plans based on feedback and progress.
-
-### Content Ideation Tool
-A specialized AI tool that helps creators overcome writer's block by generating contextually relevant content ideas based on audience demographics, trending topics, and the creator's unique voice.
-
-## Community Building
-
-### Frames
-Co-organized events and built a community around the Frames ecosystem, bringing together creators, developers, and enthusiasts to explore new possibilities in the social media space.
-
-### Base Hackathons
-Led organization of hackathons focused on blockchain development, creating opportunities for developers to collaborate, learn, and build innovative solutions.
-
-## Writing and Content Creation
-
-I regularly write about:
-- Entrepreneurship and building sustainable businesses
-- AI applications and their impact on creativity
-- Personal development and the "Creator-Athlete" lifestyle
-- The future of work and building career resilience
-
-My writing has appeared in several notable publications and has helped founders and creators develop their own authentic voices.
-
----
-
-*I'm always open to collaboration and new opportunities. If you're interested in working together or learning more about any of these projects, please [reach out to me](mailto:hello@tushaarmehta.com).*
+<div className="mt-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
+  <p className="text-center text-gray-600 dark:text-gray-300">
+    Interested in working together? <a href="mailto:hello@tushaarmehta.com" className="text-blue-600 dark:text-blue-400 hover:underline">Let's chat</a>
+  </p>
+</div>
